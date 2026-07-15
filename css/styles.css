@@ -7,6 +7,8 @@ html {
 *:after {
   box-sizing: inherit;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --black: #000000;
   --catalina: #06327d;
@@ -15,12 +17,56 @@ html {
   --sunglow: #ffd034;
   --white: #ffffff;
   --light-blue: #cadbf8;
+  --font: montserrat;
 }
 
+
 body {
+  font-family: var(--font);
   color: black;
-  background-color: #063270;
+  background-color: var(--catalina);
+  font-size: 1.125rem;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
+.container {
+  max-width: 1200px; 
+  padding: 1rem;
+  margin: 0 auto;
+}
 
+h1 {
+  color: var(--white);
+  font-size: 3rem;
+  line-height: 1.1667;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;}
+
+h2 {
+font-size: 2.5rem;
+line-height: 1.1667;
+font-weight: 300;
+text-transform: uppercase;
+}
+
+h3 {
+font-size: 1.75rem;
+line-height: 1.1667;
+font-weight: 300;
+}
+.btn-primary {
+  background-color: var(--bluetiful);
+  color: var(--white);
+  border-radius: 20%;
+}
+.btn-secondary {
+   background-color: var(--vegan);
+   color: var(--white);
+   border-radius: 20%;
+  }
+
+   nav ul { 
+    color: var(--white);
+  }
