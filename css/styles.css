@@ -7,6 +7,15 @@ html {
 *:after {
   box-sizing: inherit;
 }
+:root {
+  --black: #000000;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --white: #ffffff;
+  --light-blue: #cadbf8;
+}
 
 body {
   color: black;
