@@ -1,4 +1,6 @@
 /* BASIC FORMATTING */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -7,7 +9,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --black: #000000;
@@ -17,7 +18,7 @@ html {
   --sunglow: #ffd034;
   --white: #ffffff;
   --light-blue: #cadbf8;
-  --font: montserrat;
+   --font: "Montserrat", sans-serif;
 }
 
 
@@ -30,11 +31,12 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .container {
-  max-width: 1200px; 
-  padding: 1rem;
+  max-width: 1000px; 
+  padding: 0;
   margin: 0 auto;
-}
+  }
 
 h1 {
   color: var(--white);
@@ -42,7 +44,8 @@ h1 {
   line-height: 1.1667;
   font-weight: 300;
   text-transform: uppercase;
-  margin: 0;}
+  margin: 0;
+}
 
 h2 {
 font-size: 2.5rem;
@@ -56,17 +59,85 @@ font-size: 1.75rem;
 line-height: 1.1667;
 font-weight: 300;
 }
+
 .btn-primary {
   background-color: var(--bluetiful);
   color: var(--white);
   border-radius: 20%;
 }
+
 .btn-secondary {
    background-color: var(--vegan);
    color: var(--white);
    border-radius: 20%;
   }
 
-   nav ul { 
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  
+  nav ul { 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none; 
+    padding: 0; 
+    margin: 1rem 0 ;
+   }
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+a { 
     color: var(--white);
+    text-decoration: none;
+      }
+
+main {
+  border-top: 4px solid var(--sunglow);
+  border-bottom: 4px solid var(--sunglow);
+}
+
+/* Mobile (Default) 0px - 649px */
+media (max-width: 600) { }
+
+/* Tablet 650px and up */
+
+/* Tablet styles go here */
+
+
+/* Desktop 1000px and up */
+
+@media  (min-width: 1000px) {
+  header { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+    
+  .brand { display: flex;
+     align-items: baseline;
+     padding: 1rem;
+    
+  }
+
+  nav ul {
+ display: flex;
+        align-items: baseline;
+        gap: .5rem;
+        list-style: none;
+        margin: 0;
+        padding-right: .5rem;
+    }
   }
