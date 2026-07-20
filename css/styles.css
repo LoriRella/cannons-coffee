@@ -126,7 +126,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--white);
-  border-top: 4px solid var(--sunglow);
+  border-top: 8px solid var(--sunglow);
   align-items: center;
   padding: 1rem;
   gap: 1rem;
